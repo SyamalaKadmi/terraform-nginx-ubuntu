@@ -26,6 +26,7 @@
      ```
         terraform init
      ```
+     ![Images/Init.png](Images/Init.png)
   4. Review the execution plan
      ```
         terraform plan -var="key_name=skTF.pem"
@@ -38,6 +39,7 @@
      ```
        http://<public_ip>
      ```
+     ![Images/Output.png](Images/Output.png)
   7. Destroy the infrastructure
      ```
        terraform destroy -var="key_name=skTF.pem"
