@@ -29,19 +29,24 @@
      ![Images/Init.png](Images/Init.png)
   4. Review the execution plan
      ```
-        terraform plan -var="key_name=skTF.pem"
+        terraform plan -var="key_name=skTF"
      ```
+     ![Images/plan.png](Images/plan.png)
   5. Apply the configuration
      ```
-        terraform apply -var="key_name=skTF.pem"
+        terraform apply -var="key_name=skTF"
      ```
-  6. After provisioning, open your browser and go to:
+     ![Images/apply.png](Images/apply.png)
+     ![Images/securityGroup.png](Images/securityGroup.png)
+     ![Images/Instance.png](Images/Instance.png)
+  7. After provisioning, open your browser and go to:
      ```
        http://<public_ip>
      ```
      ![Images/Output.png](Images/Output.png)
-  7. Destroy the infrastructure
+  8. Destroy the infrastructure
      ```
-       terraform destroy -var="key_name=skTF.pem"
+       terraform destroy -var="key_name=skTF"
      ```
+     ![Images/destroy.png](Images/destroy.png)
 
